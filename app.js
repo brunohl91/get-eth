@@ -50,6 +50,12 @@ var Eth = function () {
               n += 8;
             }
           }
+          var ini = eth.address.split('.');
+          ini[ ini.length - 1 ] = 0;
+          if (n > 8) {
+            ini[ ini.length - 2 ] = 0;
+          }
+          eth.ini = ini.join('.');
           eth.n = n;
           return eth;
         }
