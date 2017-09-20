@@ -41,11 +41,8 @@ var Eth = function () {
     // 192.168, 172.16, 10
     var exp = /(^192\.168\.\d{1,3}\.\d{1,3})|(^172\.16\.\d{1,3}\.\d{1,3})|(^10\.\d{1,3}\.\d{1,3}\.\d{1,3})/;
     if (eth) { // check if isset eth
-      console.log("VALIDO1");
       if (eth.family && eth.family == 'IPv4') { // check only if IPV4
-        console.log("VALIDO2");
         if (exp.test(eth.address)) { // match against local network
-          console.log("VALIDO3");
           var n = 0;
           var mask = eth.netmask.split('.');
           for (var i = 0; i < mask.length; i++) {
