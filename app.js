@@ -4,6 +4,7 @@ var ifaces = os.networkInterfaces();
 
 global.interfaces = [];
 
+// test
 for (var e in ifaces) {
   var eth = ifaces[e];
   for (var i in eth) {
