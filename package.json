@@ -1,6 +1,6 @@
 {
   "name": "get-eth",
-  "version": "0.0.1",
+  "version": "0.5",
   "description": "Module designed to get local eths on IPv4 networks",
   "main": "app.js",
   "scripts": {
