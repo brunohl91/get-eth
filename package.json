@@ -1,0 +1,25 @@
+{
+  "name": "get-eth",
+  "version": "0.0.1",
+  "description": "Module designed to get local eths on IPv4 networks",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunohl91/get-eth.git"
+  },
+  "keywords": [
+    "eth",
+    "network",
+    "node",
+    "ipv4"
+  ],
+  "author": "Bruno Leite",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brunohl91/get-eth/issues"
+  },
+  "homepage": "https://github.com/brunohl91/get-eth#readme"
+}
