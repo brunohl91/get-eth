@@ -38,11 +38,10 @@ var Eth = function () {
    * @return {obj} || null
    */
   self.validate = function ( eth ) {
-    // 192.168, 172.16, 10
     var exp = /(^192\.168\.\d{1,3}\.\d{1,3})|(^172\.16\.\d{1,3}\.\d{1,3})|(^10\.\d{1,3}\.\d{1,3}\.\d{1,3})/;
-    if (eth) { // check if isset eth
-      if (eth.family && eth.family == 'IPv4') { // check only if IPV4
-        if (exp.test(eth.address)) { // match against local network, eth.netmask
+    if (eth) {
+      if (eth.family && eth.family == 'IPv4') {
+        if (exp.test(eth.address)) {
           var ini = eth.address.split('.');
           ini[ ini.length - 1 ] = 0;
           eth.ini = ini.join('.');
@@ -93,7 +92,7 @@ var Eth = function () {
       return obj[mask];
     }
     else {
-      return "/8";
+      return "24";
     }
   }
 

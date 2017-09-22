@@ -3,4 +3,4 @@
 
 const eth = require('./app');
 let eths = eth.get();
-console.log(eths);
+console.log(eth);
