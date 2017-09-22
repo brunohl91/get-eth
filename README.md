@@ -1,8 +1,11 @@
 # get-eth
 
+[![NPM](https://nodei.co/npm-dl/get-eth.png)](https://nodei.co/npm-dl/get-eth/)
+
 This module was designed to retrieve client network interfaces.
 
-## Installing
+Installing
+--------
 
 The module is installed by npm
 
@@ -10,7 +13,8 @@ The module is installed by npm
 npm install --save get-eth
 ```
 
-## Example usage
+Example usage
+--------
 
 Example usage can be found on test.js
 
